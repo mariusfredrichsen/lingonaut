@@ -1,0 +1,11 @@
+<p-card [style]="{ width: '15rem', overflow: 'hidden'}">
+    <ng-template #header>
+        {{course.title}}
+    </ng-template>
+    <ng-template #subtitle>
+        <span *ngIf="course.author">by {{course.author}}</span>
+    </ng-template>
+    <p class="m-0">
+        {{course.description}}
+    </p>       
+</p-card>

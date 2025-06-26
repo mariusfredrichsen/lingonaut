@@ -11,6 +11,8 @@ import {
   withEventReplay,
 } from '@angular/platform-browser';
 
+import { provideNoopAnimations } from '@angular/platform-browser/animations';
+import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 import {
   provideHttpClient,
   withInterceptorsFromDi,
@@ -23,5 +25,7 @@ export const appConfig: ApplicationConfig = {
     provideRouter(routes),
     provideClientHydration(withEventReplay()),
     provideHttpClient(withInterceptorsFromDi()),
+    provideAnimationsAsync(),
+    provideNoopAnimations(),
   ],
 };

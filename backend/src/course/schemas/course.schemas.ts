@@ -21,6 +21,12 @@ export class Course {
   @Prop({ required: false })
   description?: string;
 
+  @Prop({ required: true })
+  from: string;
+
+  @Prop({ required: true })
+  to: string;
+
   @Prop({ type: [CategorySchema], required: true })
   categories?: Category[];
 }

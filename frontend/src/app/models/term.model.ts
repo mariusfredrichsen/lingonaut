@@ -1,5 +1,6 @@
 export interface Term {
-  id: string;
+  id?: number;
   from: string;
   to: string;
+  description?: string;
 }

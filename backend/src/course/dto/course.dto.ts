@@ -9,6 +9,12 @@ export class CreateCourseDto {
   @IsString()
   author: string;
 
+  @IsString()
+  from: string;
+
+  @IsString()
+  to: string;
+
   @IsOptional()
   @IsString()
   description?: string;

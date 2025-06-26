@@ -9,6 +9,9 @@ export class Category {
   @Prop({ required: true })
   title: string;
 
+  @Prop({ required: false })
+  description: string;
+
   @Prop({ type: [TermSchema], required: true })
   terms: Term[];
 }

@@ -27,7 +27,6 @@ export class Home implements OnInit, OnDestroy {
     this.routerSub = this.router.events
       .pipe(filter((event) => event instanceof NavigationEnd))
       .subscribe((event: NavigationEnd) => {
-        console.log(event);
         this.loadCourses();
       });
   }

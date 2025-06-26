@@ -6,6 +6,9 @@ export class CategoryDto {
   @IsString()
   title: string;
 
+  @IsString()
+  description: string;
+
   @ValidateNested({ each: true })
   @Type(() => TermDto)
   @ArrayNotEmpty()

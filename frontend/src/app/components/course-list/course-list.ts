@@ -22,6 +22,8 @@ export class CourseList {
   constructor(private router: Router, private route: ActivatedRoute) {}
 
   navigateToCreate(): void {
-    this.router.navigate(['create'], { relativeTo: this.route });
+    this.router.navigate(['create'], {
+      relativeTo: this.route,
+    });
   }
 }

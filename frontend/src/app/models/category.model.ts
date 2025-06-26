@@ -1,8 +1,8 @@
 import { Term } from './term.model';
 
 export interface Category {
-  id: string;
+  id?: string;
   title: string;
-  description: string;
+  description?: string;
   terms: Term[];
 }

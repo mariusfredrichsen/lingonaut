@@ -1,1 +1,33 @@
-<p>create works!</p>
+<form [formGroup]="courseForm" (ngSubmit)="submit()">
+  <h2>Create Course</h2>
+
+  <div>
+    <label>Course Title:</label>
+    <input formControlName="title" placeholder="e.g. Spanish Basics" />
+  </div>
+
+  <div>
+    <label>Description (optional):</label>
+    <textarea formControlName="description"></textarea>
+  </div>
+
+  <div>
+    <label>Language 1:</label>
+    <input formControlName="language1" placeholder="e.g. English" />
+  </div>
+
+  <div>
+    <label>Language 2:</label>
+    <input formControlName="language2" placeholder="e.g. Spanish" />
+  </div>
+
+  <div formArrayName="categories">
+    <div *ngFor="let category of categories.controls; let i = index" [formGroupName]="i">
+        <app-create-category [form]="category"></app-create-category>
+    </div>
+    </div>
+
+  <button type="button" (click)="addCategory()">Add Category</button>
+  <br /><br />
+  <button type="submit">Create Course</button>
+</form>

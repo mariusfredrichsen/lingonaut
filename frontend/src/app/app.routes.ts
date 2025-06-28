@@ -1,9 +1,9 @@
 import { Routes } from '@angular/router';
-import { Home } from './pages/home/home';
-import { Create } from './pages/create/create';
+import { DashboardPage } from './features/dashboard/dashboard';
+import { CreatePage } from './features/create/create';
 
 export const routes: Routes = [
-  { path: '', component: Home },
-  { path: 'create', component: Create },
+  { path: '', component: DashboardPage },
+  { path: 'create', component: CreatePage },
   { path: '**', redirectTo: '' },
 ];

@@ -1,108 +1,532 @@
 [
-  { "name": "Afrikaans" },
-  { "name": "Albanian" },
-  { "name": "Amharic" },
-  { "name": "Arabic" },
-  { "name": "Armenian (Eastern)" },
-  { "name": "Armenian (Western)" },
-  { "name": "Azerbaijani (Azeri)" },
-  { "name": "Bassa" },
-  { "name": "Belarusian" },
-  { "name": "Bengali" },
-  { "name": "Bosnian" },
-  { "name": "Braille" },
-  { "name": "Bulgarian" },
-  { "name": "Burmese" },
-  { "name": "Cambodian (Khmer)" },
-  { "name": "Cape Verde Creole" },
-  { "name": "Cebuano" },
-  { "name": "Chinese (Simplified)" },
-  { "name": "Chinese (Traditional)" },
-  { "name": "Chuukese" },
-  { "name": "Croatian" },
-  { "name": "Czech" },
-  { "name": "Danish" },
-  { "name": "Dari" },
-  { "name": "Dutch" },
-  { "name": "English" },
-  { "name": "Estonian" },
-  { "name": "Farsi (Persian)" },
-  { "name": "Finnish" },
-  { "name": "Flemmish" },
-  { "name": "French (Canada)" },
-  { "name": "French (France)" },
-  { "name": "Fulani" },
-  { "name": "Georgian" },
-  { "name": "German" },
-  { "name": "Greek" },
-  { "name": "Gujarati" },
-  { "name": "Haitian Creole" },
-  { "name": "Hakha Chin" },
-  { "name": "Hakka (Chinese)" },
-  { "name": "Hebrew" },
-  { "name": "Hindi" },
-  { "name": "Hmong" },
-  { "name": "Hungarian" },
-  { "name": "Icelandic" },
-  { "name": "Igbo/Ibo" },
-  { "name": "Ilocano" },
-  { "name": "Ilonggo (Hiligaynon)" },
-  { "name": "Indonesian" },
-  { "name": "Italian" },
-  { "name": "Japanese" },
-  { "name": "Javanese" },
-  { "name": "Kannada" },
-  { "name": "Karen" },
-  { "name": "Kazakh" },
-  { "name": "Kinyarwanda" },
-  { "name": "Kirundi" },
-  { "name": "Korean" },
-  { "name": "Kurdish (Kurmanji dialect)" },
-  { "name": "Kurdish (Sorani dialect)" },
-  { "name": "Kyrgyz/Kirgiz" },
-  { "name": "Lao (Laotian)" },
-  { "name": "Latvian" },
-  { "name": "Lithuanian" },
-  { "name": "Macedonian" },
-  { "name": "Malay (Malaysian)" },
-  { "name": "Mandinka" },
-  { "name": "Marathi" },
-  { "name": "Marshallese" },
-  { "name": "Mien" },
-  { "name": "Mongolian" },
-  { "name": "Montenegrin" },
-  { "name": "Navajo" },
-  { "name": "Nepali" },
-  { "name": "Norwegian" },
-  { "name": "Oromo" },
-  { "name": "Pashto" },
-  { "name": "Polish" },
-  { "name": "Portuguese (Brazil)" },
-  { "name": "Portuguese (Portugal)" },
-  { "name": "Punjabi" },
-  { "name": "Rohingya" },
-  { "name": "Romanian (Moldavan)" },
-  { "name": "Russian" },
-  { "name": "Serbian" },
-  { "name": "Slovak" },
-  { "name": "Slovenian" },
-  { "name": "Somali" },
-  { "name": "Spanish (Castilian)" },
-  { "name": "Spanish (Latin American)" },
-  { "name": "Spanish (other varieties)" },
-  { "name": "Swahili" },
-  { "name": "Swedish" },
-  { "name": "Tagalog" },
-  { "name": "Tamil" },
-  { "name": "Telugu" },
-  { "name": "Thai" },
-  { "name": "Tibetan" },
-  { "name": "Tigrinya" },
-  { "name": "Turkish" },
-  { "name": "Ukrainian" },
-  { "name": "Urdu" },
-  { "name": "Uzbek" },
-  { "name": "Vietnamese" },
-  { "name": "Wolof" },
-  { "name": "Yoruba" }
+  {
+    "name": "Afrikaans",
+    "origin_country_code": "ZA",
+    "iso_639_1_code": "af"
+  },
+  {
+    "name": "Albanian",
+    "origin_country_code": "AL",
+    "iso_639_1_code": "sq"
+  },
+  {
+    "name": "Amharic",
+    "origin_country_code": "ET",
+    "iso_639_1_code": "am"
+  },
+  {
+    "name": "Arabic",
+    "origin_country_code": "SA",
+    "iso_639_1_code": "ar"
+  },
+  {
+    "name": "Armenian (Eastern)",
+    "origin_country_code": "AM",
+    "iso_639_1_code": "hy"
+  },
+  {
+    "name": "Armenian (Western)",
+    "origin_country_code": "AM",
+    "iso_639_1_code": "hy"
+  },
+  {
+    "name": "Azerbaijani (Azeri)",
+    "origin_country_code": "AZ",
+    "iso_639_1_code": "az"
+  },
+  {
+    "name": "Bassa",
+    "origin_country_code": "LR",
+    "iso_639_1_code": null
+  },
+  {
+    "name": "Belarusian",
+    "origin_country_code": "BY",
+    "iso_639_1_code": "be"
+  },
+  {
+    "name": "Bengali",
+    "origin_country_code": "BD",
+    "iso_639_1_code": "bn"
+  },
+  {
+    "name": "Bosnian",
+    "origin_country_code": "BA",
+    "iso_639_1_code": "bs"
+  },
+  {
+    "name": "Braille",
+    "origin_country_code": "FR",
+    "iso_639_1_code": null
+  },
+  {
+    "name": "Bulgarian",
+    "origin_country_code": "BG",
+    "iso_639_1_code": "bg"
+  },
+  {
+    "name": "Burmese",
+    "origin_country_code": "MM",
+    "iso_639_1_code": "my"
+  },
+  {
+    "name": "Cambodian (Khmer)",
+    "origin_country_code": "KH",
+    "iso_639_1_code": "km"
+  },
+  {
+    "name": "Cape Verde Creole",
+    "origin_country_code": "CV",
+    "iso_639_1_code": null
+  },
+  {
+    "name": "Cebuano",
+    "origin_country_code": "PH",
+    "iso_639_1_code": "ceb"
+  },
+  {
+    "name": "Chinese (Simplified)",
+    "origin_country_code": "CN",
+    "iso_639_1_code": "zh"
+  },
+  {
+    "name": "Chinese (Traditional)",
+    "origin_country_code": "TW",
+    "iso_639_1_code": "zh"
+  },
+  {
+    "name": "Chuukese",
+    "origin_country_code": "FM",
+    "iso_639_1_code": null
+  },
+  {
+    "name": "Croatian",
+    "origin_country_code": "HR",
+    "iso_639_1_code": "hr"
+  },
+  {
+    "name": "Czech",
+    "origin_country_code": "CZ",
+    "iso_639_1_code": "cs"
+  },
+  {
+    "name": "Danish",
+    "origin_country_code": "DK",
+    "iso_639_1_code": "da"
+  },
+  {
+    "name": "Dari",
+    "origin_country_code": "AF",
+    "iso_639_1_code": "fa"
+  },
+  {
+    "name": "Dutch",
+    "origin_country_code": "NL",
+    "iso_639_1_code": "nl"
+  },
+  {
+    "name": "English",
+    "origin_country_code": "GB",
+    "iso_639_1_code": "en"
+  },
+  {
+    "name": "Estonian",
+    "origin_country_code": "EE",
+    "iso_639_1_code": "et"
+  },
+  {
+    "name": "Farsi (Persian)",
+    "origin_country_code": "IR",
+    "iso_639_1_code": "fa"
+  },
+  {
+    "name": "Finnish",
+    "origin_country_code": "FI",
+    "iso_639_1_code": "fi"
+  },
+  {
+    "name": "Flemmish",
+    "origin_country_code": "BE",
+    "iso_639_1_code": "nl"
+  },
+  {
+    "name": "French (Canada)",
+    "origin_country_code": "CA",
+    "iso_639_1_code": "fr"
+  },
+  {
+    "name": "French (France)",
+    "origin_country_code": "FR",
+    "iso_639_1_code": "fr"
+  },
+  {
+    "name": "Fulani",
+    "origin_country_code": "NE",
+    "iso_639_1_code": null
+  },
+  {
+    "name": "Georgian",
+    "origin_country_code": "GE",
+    "iso_639_1_code": "ka"
+  },
+  {
+    "name": "German",
+    "origin_country_code": "DE",
+    "iso_639_1_code": "de"
+  },
+  {
+    "name": "Greek",
+    "origin_country_code": "GR",
+    "iso_639_1_code": "el"
+  },
+  {
+    "name": "Gujarati",
+    "origin_country_code": "IN",
+    "iso_639_1_code": "gu"
+  },
+  {
+    "name": "Haitian Creole",
+    "origin_country_code": "HT",
+    "iso_639_1_code": "ht"
+  },
+  {
+    "name": "Hakha Chin",
+    "origin_country_code": "MM",
+    "iso_639_1_code": null
+  },
+  {
+    "name": "Hakka (Chinese)",
+    "origin_country_code": "CN",
+    "iso_639_1_code": null
+  },
+  {
+    "name": "Hebrew",
+    "origin_country_code": "IL",
+    "iso_639_1_code": "he"
+  },
+  {
+    "name": "Hindi",
+    "origin_country_code": "IN",
+    "iso_639_1_code": "hi"
+  },
+  {
+    "name": "Hmong",
+    "origin_country_code": "CN",
+    "iso_639_1_code": "hmn"
+  },
+  {
+    "name": "Hungarian",
+    "origin_country_code": "HU",
+    "iso_639_1_code": "hu"
+  },
+  {
+    "name": "Icelandic",
+    "origin_country_code": "IS",
+    "iso_639_1_code": "is"
+  },
+  {
+    "name": "Igbo/Ibo",
+    "origin_country_code": "NG",
+    "iso_639_1_code": "ig"
+  },
+  {
+    "name": "Ilocano",
+    "origin_country_code": "PH",
+    "iso_639_1_code": null
+  },
+  {
+    "name": "Ilonggo (Hiligaynon)",
+    "origin_country_code": "PH",
+    "iso_639_1_code": "hil"
+  },
+  {
+    "name": "Indonesian",
+    "origin_country_code": "ID",
+    "iso_639_1_code": "id"
+  },
+  {
+    "name": "Italian",
+    "origin_country_code": "IT",
+    "iso_639_1_code": "it"
+  },
+  {
+    "name": "Japanese",
+    "origin_country_code": "JP",
+    "iso_639_1_code": "ja"
+  },
+  {
+    "name": "Javanese",
+    "origin_country_code": "ID",
+    "iso_639_1_code": "jv"
+  },
+  {
+    "name": "Kannada",
+    "origin_country_code": "IN",
+    "iso_639_1_code": "kn"
+  },
+  {
+    "name": "Karen",
+    "origin_country_code": "MM",
+    "iso_639_1_code": null
+  },
+  {
+    "name": "Kazakh",
+    "origin_country_code": "KZ",
+    "iso_639_1_code": "kk"
+  },
+  {
+    "name": "Kinyarwanda",
+    "origin_country_code": "RW",
+    "iso_639_1_code": "rw"
+  },
+  {
+    "name": "Kirundi",
+    "origin_country_code": "BI",
+    "iso_639_1_code": "rn"
+  },
+  {
+    "name": "Korean",
+    "origin_country_code": "KR",
+    "iso_639_1_code": "ko"
+  },
+  {
+    "name": "Kurdish (Kurmanji dialect)",
+    "origin_country_code": "TR",
+    "iso_639_1_code": "ku"
+  },
+  {
+    "name": "Kurdish (Sorani dialect)",
+    "origin_country_code": "IQ",
+    "iso_639_1_code": "ckb"
+  },
+  {
+    "name": "Kyrgyz/Kirgiz",
+    "origin_country_code": "KG",
+    "iso_639_1_code": "ky"
+  },
+  {
+    "name": "Lao (Laotian)",
+    "origin_country_code": "LA",
+    "iso_639_1_code": "lo"
+  },
+  {
+    "name": "Latvian",
+    "origin_country_code": "LV",
+    "iso_639_1_code": "lv"
+  },
+  {
+    "name": "Lithuanian",
+    "origin_country_code": "LT",
+    "iso_639_1_code": "lt"
+  },
+  {
+    "name": "Macedonian",
+    "origin_country_code": "MK",
+    "iso_639_1_code": "mk"
+  },
+  {
+    "name": "Malay (Malaysian)",
+    "origin_country_code": "MY",
+    "iso_639_1_code": "ms"
+  },
+  {
+    "name": "Mandinka",
+    "origin_country_code": "GM",
+    "iso_639_1_code": null
+  },
+  {
+    "name": "Marathi",
+    "origin_country_code": "IN",
+    "iso_639_1_code": "mr"
+  },
+  {
+    "name": "Marshallese",
+    "origin_country_code": "MH",
+    "iso_639_1_code": "mh"
+  },
+  {
+    "name": "Mien",
+    "origin_country_code": "CN",
+    "iso_639_1_code": null
+  },
+  {
+    "name": "Mongolian",
+    "origin_country_code": "MN",
+    "iso_639_1_code": "mn"
+  },
+  {
+    "name": "Montenegrin",
+    "origin_country_code": "ME",
+    "iso_639_1_code": "srp"
+  },
+  {
+    "name": "Navajo",
+    "origin_country_code": "US",
+    "iso_639_1_code": "nv"
+  },
+  {
+    "name": "Nepali",
+    "origin_country_code": "NP",
+    "iso_639_1_code": "ne"
+  },
+  {
+    "name": "Norwegian",
+    "origin_country_code": "NO",
+    "iso_639_1_code": "no"
+  },
+  {
+    "name": "Oromo",
+    "origin_country_code": "ET",
+    "iso_639_1_code": "om"
+  },
+  {
+    "name": "Pashto",
+    "origin_country_code": "AF",
+    "iso_639_1_code": "ps"
+  },
+  {
+    "name": "Polish",
+    "origin_country_code": "PL",
+    "iso_639_1_code": "pl"
+  },
+  {
+    "name": "Portuguese (Brazil)",
+    "origin_country_code": "BR",
+    "iso_639_1_code": "pt"
+  },
+  {
+    "name": "Portuguese (Portugal)",
+    "origin_country_code": "PT",
+    "iso_639_1_code": "pt"
+  },
+  {
+    "name": "Punjabi",
+    "origin_country_code": "IN",
+    "iso_639_1_code": "pa"
+  },
+  {
+    "name": "Rohingya",
+    "origin_country_code": "MM",
+    "iso_639_1_code": null
+  },
+  {
+    "name": "Romanian (Moldavan)",
+    "origin_country_code": "RO",
+    "iso_639_1_code": "ro"
+  },
+  {
+    "name": "Russian",
+    "origin_country_code": "RU",
+    "iso_639_1_code": "ru"
+  },
+  {
+    "name": "Serbian",
+    "origin_country_code": "RS",
+    "iso_639_1_code": "sr"
+  },
+  {
+    "name": "Slovak",
+    "origin_country_code": "SK",
+    "iso_639_1_code": "sk"
+  },
+  {
+    "name": "Slovenian",
+    "origin_country_code": "SI",
+    "iso_639_1_code": "sl"
+  },
+  {
+    "name": "Somali",
+    "origin_country_code": "SO",
+    "iso_639_1_code": "so"
+  },
+  {
+    "name": "Spanish (Castilian)",
+    "origin_country_code": "ES",
+    "iso_639_1_code": "es"
+  },
+  {
+    "name": "Spanish (Latin American)",
+    "origin_country_code": "MX",
+    "iso_639_1_code": "es"
+  },
+  {
+    "name": "Spanish (other varieties)",
+    "origin_country_code": "ES",
+    "iso_639_1_code": "es"
+  },
+  {
+    "name": "Swahili",
+    "origin_country_code": "TZ",
+    "iso_639_1_code": "sw"
+  },
+  {
+    "name": "Swedish",
+    "origin_country_code": "SE",
+    "iso_639_1_code": "sv"
+  },
+  {
+    "name": "Tagalog",
+    "origin_country_code": "PH",
+    "iso_639_1_code": "tl"
+  },
+  {
+    "name": "Tamil",
+    "origin_country_code": "IN",
+    "iso_639_1_code": "ta"
+  },
+  {
+    "name": "Telugu",
+    "origin_country_code": "IN",
+    "iso_639_1_code": "te"
+  },
+  {
+    "name": "Thai",
+    "origin_country_code": "TH",
+    "iso_639_1_code": "th"
+  },
+  {
+    "name": "Tibetan",
+    "origin_country_code": "CN",
+    "iso_639_1_code": "bo"
+  },
+  {
+    "name": "Tigrinya",
+    "origin_country_code": "ER",
+    "iso_639_1_code": "ti"
+  },
+  {
+    "name": "Turkish",
+    "origin_country_code": "TR",
+    "iso_639_1_code": "tr"
+  },
+  {
+    "name": "Ukrainian",
+    "origin_country_code": "UA",
+    "iso_639_1_code": "uk"
+  },
+  {
+    "name": "Urdu",
+    "origin_country_code": "PK",
+    "iso_639_1_code": "ur"
+  },
+  {
+    "name": "Uzbek",
+    "origin_country_code": "UZ",
+    "iso_639_1_code": "uz"
+  },
+  {
+    "name": "Vietnamese",
+    "origin_country_code": "VN",
+    "iso_639_1_code": "vi"
+  },
+  {
+    "name": "Wolof",
+    "origin_country_code": "SN",
+    "iso_639_1_code": "wo"
+  },
+  {
+    "name": "Yoruba",
+    "origin_country_code": "NG",
+    "iso_639_1_code": "yo"
+  }
 ]

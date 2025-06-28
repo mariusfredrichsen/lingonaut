@@ -6,10 +6,13 @@ export type TermDocument = Term & Document;
 @Schema()
 export class Term {
   @Prop({ required: true })
-  from: string;
+  termFrom: string;
 
   @Prop({ required: true })
-  to: string;
+  termTo: string;
+
+  @Prop({ required: false })
+  notes?: string;
 }
 
 export const TermSchema = SchemaFactory.createForClass(Term);

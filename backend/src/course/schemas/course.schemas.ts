@@ -22,13 +22,13 @@ export class Course {
   description?: string;
 
   @Prop({ required: true })
-  from: string;
+  languageFrom: string; // from
 
   @Prop({ required: true })
-  to: string;
+  languageTo: string; // to
 
   @Prop({ type: [CategorySchema], required: true })
-  categories?: Category[];
+  categories: Category[] = [];
 }
 
 export const CourseSchema = SchemaFactory.createForClass(Course);

@@ -10,10 +10,10 @@ export class CreateCourseDto {
   author: string;
 
   @IsString()
-  from: string;
+  languageFrom: string;
 
   @IsString()
-  to: string;
+  languageTo: string;
 
   @IsOptional()
   @IsString()
@@ -21,5 +21,5 @@ export class CreateCourseDto {
 
   @ValidateNested({ each: true })
   @Type(() => CategoryDto)
-  categories?: CategoryDto[];
+  categories: CategoryDto[] = [];
 }

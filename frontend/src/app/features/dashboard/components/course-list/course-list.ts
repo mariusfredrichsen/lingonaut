@@ -1,12 +1,12 @@
 import { Component, Input, OnDestroy, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { CourseComponent } from '../course/course';
-import { Course } from '../../models/course.model';
 import { CardModule } from 'primeng/card';
 import { ButtonModule } from 'primeng/button';
 import { Router, ActivatedRoute, NavigationEnd } from '@angular/router';
 import { CourseService } from '../course/course.service';
 import { filter, Subscription } from 'rxjs';
+import { Course } from '../../../../core/models/course.model';
 
 @Component({
   selector: 'app-course-list',

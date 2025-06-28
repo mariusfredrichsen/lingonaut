@@ -1,9 +1,13 @@
-import { IsString } from 'class-validator';
+import { IsOptional, IsString } from 'class-validator';
 
 export class TermDto {
   @IsString()
-  from: string;
+  termFrom: string;
 
   @IsString()
-  to: string;
+  termTo: string;
+
+  @IsString()
+  @IsOptional()
+  notes?: string;
 }

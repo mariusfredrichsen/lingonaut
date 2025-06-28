@@ -11,7 +11,6 @@ import {
   Validators,
 } from '@angular/forms';
 import { CardModule } from 'primeng/card';
-import { Term } from '../../models/term.model';
 import { CommonModule } from '@angular/common';
 import { CreateTerm } from '../create-term/create-term';
 import { ButtonModule } from 'primeng/button';
@@ -26,7 +25,6 @@ import { ButtonModule } from 'primeng/button';
     InputTextModule,
     FormsModule,
     CardModule,
-    CreateTerm,
     ReactiveFormsModule,
   ],
   templateUrl: './create-category.html',
@@ -44,8 +42,8 @@ export class CreateCategory {
 
   addTerm(): void {
     const term = this.fb.group({
-      source: ['', Validators.required],
-      target: ['', Validators.required],
+      termFrom: ['', Validators.required],
+      termTo: ['', Validators.required],
       notes: [''],
     });
     this.terms.push(term);

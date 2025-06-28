@@ -3,7 +3,6 @@ import { FloatLabelModule } from 'primeng/floatlabel';
 import { InputTextModule } from 'primeng/inputtext';
 import { FormGroup, FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { CardModule } from 'primeng/card';
-import { Term } from '../../models/term.model';
 
 @Component({
   selector: 'app-create-term',

@@ -1,7 +1,7 @@
 import { Component, Input } from '@angular/core';
-import { Course } from '../../models/course.model';
 import { CardModule } from 'primeng/card';
 import { CommonModule } from '@angular/common';
+import { Course } from '../../../../core/models/course.model';
 
 @Component({
   selector: 'app-course',

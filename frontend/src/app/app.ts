@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { CommonModule } from '@angular/common';
-import { Topbar } from './components/topbar/topbar';
+import { Topbar } from './shared/topbar/topbar';
 
 @Component({
   selector: 'app-root',

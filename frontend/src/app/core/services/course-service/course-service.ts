@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
-import { Course } from '../../../../core/models/course.model';
+import { Course } from '../../models/course.model';
 
 @Injectable({
   providedIn: 'root',
@@ -15,7 +15,7 @@ export class CourseService {
     return this.http.get<Course[]>(this.apiUrl);
   }
 
-  getCourseById(id: number): Observable<Course> {
+  getCourseById(id: string): Observable<Course> {
     return this.http.get<Course>(`${this.apiUrl}/${id}`);
   }
 }

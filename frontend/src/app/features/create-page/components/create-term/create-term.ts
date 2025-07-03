@@ -15,9 +15,8 @@ import { CardModule } from 'primeng/card';
   ],
   templateUrl: './create-term.html',
   styleUrl: './create-term.scss',
-  standalone: true,
 })
 export class CreateTerm {
-  @Input() form!: FormGroup; // the term FormGroup passed in from CategoryFormComponent
-  @Output() remove = new EventEmitter<void>(); // emit when user wants to remove this term
+  @Input() form!: FormGroup;
+  @Output() remove = new EventEmitter<void>();
 }

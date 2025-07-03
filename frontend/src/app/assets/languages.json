@@ -1,532 +1,532 @@
 [
   {
     "name": "Afrikaans",
-    "origin_country_code": "ZA",
+    "originCountryCode": "ZA",
     "iso_639_1_code": "af"
   },
   {
     "name": "Albanian",
-    "origin_country_code": "AL",
+    "originCountryCode": "AL",
     "iso_639_1_code": "sq"
   },
   {
     "name": "Amharic",
-    "origin_country_code": "ET",
+    "originCountryCode": "ET",
     "iso_639_1_code": "am"
   },
   {
     "name": "Arabic",
-    "origin_country_code": "SA",
+    "originCountryCode": "SA",
     "iso_639_1_code": "ar"
   },
   {
     "name": "Armenian (Eastern)",
-    "origin_country_code": "AM",
+    "originCountryCode": "AM",
     "iso_639_1_code": "hy"
   },
   {
     "name": "Armenian (Western)",
-    "origin_country_code": "AM",
+    "originCountryCode": "AM",
     "iso_639_1_code": "hy"
   },
   {
     "name": "Azerbaijani (Azeri)",
-    "origin_country_code": "AZ",
+    "originCountryCode": "AZ",
     "iso_639_1_code": "az"
   },
   {
     "name": "Bassa",
-    "origin_country_code": "LR",
+    "originCountryCode": "LR",
     "iso_639_1_code": null
   },
   {
     "name": "Belarusian",
-    "origin_country_code": "BY",
+    "originCountryCode": "BY",
     "iso_639_1_code": "be"
   },
   {
     "name": "Bengali",
-    "origin_country_code": "BD",
+    "originCountryCode": "BD",
     "iso_639_1_code": "bn"
   },
   {
     "name": "Bosnian",
-    "origin_country_code": "BA",
+    "originCountryCode": "BA",
     "iso_639_1_code": "bs"
   },
   {
     "name": "Braille",
-    "origin_country_code": "FR",
+    "originCountryCode": "FR",
     "iso_639_1_code": null
   },
   {
     "name": "Bulgarian",
-    "origin_country_code": "BG",
+    "originCountryCode": "BG",
     "iso_639_1_code": "bg"
   },
   {
     "name": "Burmese",
-    "origin_country_code": "MM",
+    "originCountryCode": "MM",
     "iso_639_1_code": "my"
   },
   {
     "name": "Cambodian (Khmer)",
-    "origin_country_code": "KH",
+    "originCountryCode": "KH",
     "iso_639_1_code": "km"
   },
   {
     "name": "Cape Verde Creole",
-    "origin_country_code": "CV",
+    "originCountryCode": "CV",
     "iso_639_1_code": null
   },
   {
     "name": "Cebuano",
-    "origin_country_code": "PH",
+    "originCountryCode": "PH",
     "iso_639_1_code": "ceb"
   },
   {
     "name": "Chinese (Simplified)",
-    "origin_country_code": "CN",
+    "originCountryCode": "CN",
     "iso_639_1_code": "zh"
   },
   {
     "name": "Chinese (Traditional)",
-    "origin_country_code": "TW",
+    "originCountryCode": "TW",
     "iso_639_1_code": "zh"
   },
   {
     "name": "Chuukese",
-    "origin_country_code": "FM",
+    "originCountryCode": "FM",
     "iso_639_1_code": null
   },
   {
     "name": "Croatian",
-    "origin_country_code": "HR",
+    "originCountryCode": "HR",
     "iso_639_1_code": "hr"
   },
   {
     "name": "Czech",
-    "origin_country_code": "CZ",
+    "originCountryCode": "CZ",
     "iso_639_1_code": "cs"
   },
   {
     "name": "Danish",
-    "origin_country_code": "DK",
+    "originCountryCode": "DK",
     "iso_639_1_code": "da"
   },
   {
     "name": "Dari",
-    "origin_country_code": "AF",
+    "originCountryCode": "AF",
     "iso_639_1_code": "fa"
   },
   {
     "name": "Dutch",
-    "origin_country_code": "NL",
+    "originCountryCode": "NL",
     "iso_639_1_code": "nl"
   },
   {
     "name": "English",
-    "origin_country_code": "GB",
+    "originCountryCode": "GB",
     "iso_639_1_code": "en"
   },
   {
     "name": "Estonian",
-    "origin_country_code": "EE",
+    "originCountryCode": "EE",
     "iso_639_1_code": "et"
   },
   {
     "name": "Farsi (Persian)",
-    "origin_country_code": "IR",
+    "originCountryCode": "IR",
     "iso_639_1_code": "fa"
   },
   {
     "name": "Finnish",
-    "origin_country_code": "FI",
+    "originCountryCode": "FI",
     "iso_639_1_code": "fi"
   },
   {
     "name": "Flemmish",
-    "origin_country_code": "BE",
+    "originCountryCode": "BE",
     "iso_639_1_code": "nl"
   },
   {
     "name": "French (Canada)",
-    "origin_country_code": "CA",
+    "originCountryCode": "CA",
     "iso_639_1_code": "fr"
   },
   {
     "name": "French (France)",
-    "origin_country_code": "FR",
+    "originCountryCode": "FR",
     "iso_639_1_code": "fr"
   },
   {
     "name": "Fulani",
-    "origin_country_code": "NE",
+    "originCountryCode": "NE",
     "iso_639_1_code": null
   },
   {
     "name": "Georgian",
-    "origin_country_code": "GE",
+    "originCountryCode": "GE",
     "iso_639_1_code": "ka"
   },
   {
     "name": "German",
-    "origin_country_code": "DE",
+    "originCountryCode": "DE",
     "iso_639_1_code": "de"
   },
   {
     "name": "Greek",
-    "origin_country_code": "GR",
+    "originCountryCode": "GR",
     "iso_639_1_code": "el"
   },
   {
     "name": "Gujarati",
-    "origin_country_code": "IN",
+    "originCountryCode": "IN",
     "iso_639_1_code": "gu"
   },
   {
     "name": "Haitian Creole",
-    "origin_country_code": "HT",
+    "originCountryCode": "HT",
     "iso_639_1_code": "ht"
   },
   {
     "name": "Hakha Chin",
-    "origin_country_code": "MM",
+    "originCountryCode": "MM",
     "iso_639_1_code": null
   },
   {
     "name": "Hakka (Chinese)",
-    "origin_country_code": "CN",
+    "originCountryCode": "CN",
     "iso_639_1_code": null
   },
   {
     "name": "Hebrew",
-    "origin_country_code": "IL",
+    "originCountryCode": "IL",
     "iso_639_1_code": "he"
   },
   {
     "name": "Hindi",
-    "origin_country_code": "IN",
+    "originCountryCode": "IN",
     "iso_639_1_code": "hi"
   },
   {
     "name": "Hmong",
-    "origin_country_code": "CN",
+    "originCountryCode": "CN",
     "iso_639_1_code": "hmn"
   },
   {
     "name": "Hungarian",
-    "origin_country_code": "HU",
+    "originCountryCode": "HU",
     "iso_639_1_code": "hu"
   },
   {
     "name": "Icelandic",
-    "origin_country_code": "IS",
+    "originCountryCode": "IS",
     "iso_639_1_code": "is"
   },
   {
     "name": "Igbo/Ibo",
-    "origin_country_code": "NG",
+    "originCountryCode": "NG",
     "iso_639_1_code": "ig"
   },
   {
     "name": "Ilocano",
-    "origin_country_code": "PH",
+    "originCountryCode": "PH",
     "iso_639_1_code": null
   },
   {
     "name": "Ilonggo (Hiligaynon)",
-    "origin_country_code": "PH",
+    "originCountryCode": "PH",
     "iso_639_1_code": "hil"
   },
   {
     "name": "Indonesian",
-    "origin_country_code": "ID",
+    "originCountryCode": "ID",
     "iso_639_1_code": "id"
   },
   {
     "name": "Italian",
-    "origin_country_code": "IT",
+    "originCountryCode": "IT",
     "iso_639_1_code": "it"
   },
   {
     "name": "Japanese",
-    "origin_country_code": "JP",
+    "originCountryCode": "JP",
     "iso_639_1_code": "ja"
   },
   {
     "name": "Javanese",
-    "origin_country_code": "ID",
+    "originCountryCode": "ID",
     "iso_639_1_code": "jv"
   },
   {
     "name": "Kannada",
-    "origin_country_code": "IN",
+    "originCountryCode": "IN",
     "iso_639_1_code": "kn"
   },
   {
     "name": "Karen",
-    "origin_country_code": "MM",
+    "originCountryCode": "MM",
     "iso_639_1_code": null
   },
   {
     "name": "Kazakh",
-    "origin_country_code": "KZ",
+    "originCountryCode": "KZ",
     "iso_639_1_code": "kk"
   },
   {
     "name": "Kinyarwanda",
-    "origin_country_code": "RW",
+    "originCountryCode": "RW",
     "iso_639_1_code": "rw"
   },
   {
     "name": "Kirundi",
-    "origin_country_code": "BI",
+    "originCountryCode": "BI",
     "iso_639_1_code": "rn"
   },
   {
     "name": "Korean",
-    "origin_country_code": "KR",
+    "originCountryCode": "KR",
     "iso_639_1_code": "ko"
   },
   {
     "name": "Kurdish (Kurmanji dialect)",
-    "origin_country_code": "TR",
+    "originCountryCode": "TR",
     "iso_639_1_code": "ku"
   },
   {
     "name": "Kurdish (Sorani dialect)",
-    "origin_country_code": "IQ",
+    "originCountryCode": "IQ",
     "iso_639_1_code": "ckb"
   },
   {
     "name": "Kyrgyz/Kirgiz",
-    "origin_country_code": "KG",
+    "originCountryCode": "KG",
     "iso_639_1_code": "ky"
   },
   {
     "name": "Lao (Laotian)",
-    "origin_country_code": "LA",
+    "originCountryCode": "LA",
     "iso_639_1_code": "lo"
   },
   {
     "name": "Latvian",
-    "origin_country_code": "LV",
+    "originCountryCode": "LV",
     "iso_639_1_code": "lv"
   },
   {
     "name": "Lithuanian",
-    "origin_country_code": "LT",
+    "originCountryCode": "LT",
     "iso_639_1_code": "lt"
   },
   {
     "name": "Macedonian",
-    "origin_country_code": "MK",
+    "originCountryCode": "MK",
     "iso_639_1_code": "mk"
   },
   {
     "name": "Malay (Malaysian)",
-    "origin_country_code": "MY",
+    "originCountryCode": "MY",
     "iso_639_1_code": "ms"
   },
   {
     "name": "Mandinka",
-    "origin_country_code": "GM",
+    "originCountryCode": "GM",
     "iso_639_1_code": null
   },
   {
     "name": "Marathi",
-    "origin_country_code": "IN",
+    "originCountryCode": "IN",
     "iso_639_1_code": "mr"
   },
   {
     "name": "Marshallese",
-    "origin_country_code": "MH",
+    "originCountryCode": "MH",
     "iso_639_1_code": "mh"
   },
   {
     "name": "Mien",
-    "origin_country_code": "CN",
+    "originCountryCode": "CN",
     "iso_639_1_code": null
   },
   {
     "name": "Mongolian",
-    "origin_country_code": "MN",
+    "originCountryCode": "MN",
     "iso_639_1_code": "mn"
   },
   {
     "name": "Montenegrin",
-    "origin_country_code": "ME",
+    "originCountryCode": "ME",
     "iso_639_1_code": "srp"
   },
   {
     "name": "Navajo",
-    "origin_country_code": "US",
+    "originCountryCode": "US",
     "iso_639_1_code": "nv"
   },
   {
     "name": "Nepali",
-    "origin_country_code": "NP",
+    "originCountryCode": "NP",
     "iso_639_1_code": "ne"
   },
   {
     "name": "Norwegian",
-    "origin_country_code": "NO",
+    "originCountryCode": "NO",
     "iso_639_1_code": "no"
   },
   {
     "name": "Oromo",
-    "origin_country_code": "ET",
+    "originCountryCode": "ET",
     "iso_639_1_code": "om"
   },
   {
     "name": "Pashto",
-    "origin_country_code": "AF",
+    "originCountryCode": "AF",
     "iso_639_1_code": "ps"
   },
   {
     "name": "Polish",
-    "origin_country_code": "PL",
+    "originCountryCode": "PL",
     "iso_639_1_code": "pl"
   },
   {
     "name": "Portuguese (Brazil)",
-    "origin_country_code": "BR",
+    "originCountryCode": "BR",
     "iso_639_1_code": "pt"
   },
   {
     "name": "Portuguese (Portugal)",
-    "origin_country_code": "PT",
+    "originCountryCode": "PT",
     "iso_639_1_code": "pt"
   },
   {
     "name": "Punjabi",
-    "origin_country_code": "IN",
+    "originCountryCode": "IN",
     "iso_639_1_code": "pa"
   },
   {
     "name": "Rohingya",
-    "origin_country_code": "MM",
+    "originCountryCode": "MM",
     "iso_639_1_code": null
   },
   {
     "name": "Romanian (Moldavan)",
-    "origin_country_code": "RO",
+    "originCountryCode": "RO",
     "iso_639_1_code": "ro"
   },
   {
     "name": "Russian",
-    "origin_country_code": "RU",
+    "originCountryCode": "RU",
     "iso_639_1_code": "ru"
   },
   {
     "name": "Serbian",
-    "origin_country_code": "RS",
+    "originCountryCode": "RS",
     "iso_639_1_code": "sr"
   },
   {
     "name": "Slovak",
-    "origin_country_code": "SK",
+    "originCountryCode": "SK",
     "iso_639_1_code": "sk"
   },
   {
     "name": "Slovenian",
-    "origin_country_code": "SI",
+    "originCountryCode": "SI",
     "iso_639_1_code": "sl"
   },
   {
     "name": "Somali",
-    "origin_country_code": "SO",
+    "originCountryCode": "SO",
     "iso_639_1_code": "so"
   },
   {
     "name": "Spanish (Castilian)",
-    "origin_country_code": "ES",
+    "originCountryCode": "ES",
     "iso_639_1_code": "es"
   },
   {
     "name": "Spanish (Latin American)",
-    "origin_country_code": "MX",
+    "originCountryCode": "MX",
     "iso_639_1_code": "es"
   },
   {
     "name": "Spanish (other varieties)",
-    "origin_country_code": "ES",
+    "originCountryCode": "ES",
     "iso_639_1_code": "es"
   },
   {
     "name": "Swahili",
-    "origin_country_code": "TZ",
+    "originCountryCode": "TZ",
     "iso_639_1_code": "sw"
   },
   {
     "name": "Swedish",
-    "origin_country_code": "SE",
+    "originCountryCode": "SE",
     "iso_639_1_code": "sv"
   },
   {
     "name": "Tagalog",
-    "origin_country_code": "PH",
+    "originCountryCode": "PH",
     "iso_639_1_code": "tl"
   },
   {
     "name": "Tamil",
-    "origin_country_code": "IN",
+    "originCountryCode": "IN",
     "iso_639_1_code": "ta"
   },
   {
     "name": "Telugu",
-    "origin_country_code": "IN",
+    "originCountryCode": "IN",
     "iso_639_1_code": "te"
   },
   {
     "name": "Thai",
-    "origin_country_code": "TH",
+    "originCountryCode": "TH",
     "iso_639_1_code": "th"
   },
   {
     "name": "Tibetan",
-    "origin_country_code": "CN",
+    "originCountryCode": "CN",
     "iso_639_1_code": "bo"
   },
   {
     "name": "Tigrinya",
-    "origin_country_code": "ER",
+    "originCountryCode": "ER",
     "iso_639_1_code": "ti"
   },
   {
     "name": "Turkish",
-    "origin_country_code": "TR",
+    "originCountryCode": "TR",
     "iso_639_1_code": "tr"
   },
   {
     "name": "Ukrainian",
-    "origin_country_code": "UA",
+    "originCountryCode": "UA",
     "iso_639_1_code": "uk"
   },
   {
     "name": "Urdu",
-    "origin_country_code": "PK",
+    "originCountryCode": "PK",
     "iso_639_1_code": "ur"
   },
   {
     "name": "Uzbek",
-    "origin_country_code": "UZ",
+    "originCountryCode": "UZ",
     "iso_639_1_code": "uz"
   },
   {
     "name": "Vietnamese",
-    "origin_country_code": "VN",
+    "originCountryCode": "VN",
     "iso_639_1_code": "vi"
   },
   {
     "name": "Wolof",
-    "origin_country_code": "SN",
+    "originCountryCode": "SN",
     "iso_639_1_code": "wo"
   },
   {
     "name": "Yoruba",
-    "origin_country_code": "NG",
+    "originCountryCode": "NG",
     "iso_639_1_code": "yo"
   }
 ]

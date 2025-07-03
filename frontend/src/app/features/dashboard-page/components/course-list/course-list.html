@@ -1,7 +1,7 @@
 
 
 <div class="grid grid-cols-1 md:grid-cols-3 gap-4 justify-center">
-  <app-course *ngFor="let course of courses" [course]="course"></app-course>
+  <app-course-card *ngFor="let course of courses" [course]="course"></app-course-card>
 </div>
 <p-button label="Create Course" icon="pi pi-plus" (onClick)='navigateToCreate()' />
 

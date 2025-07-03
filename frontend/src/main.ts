@@ -1,5 +1,21 @@
 import { bootstrapApplication } from '@angular/platform-browser';
-import { appConfig } from './app/app.config';
+import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
+import { providePrimeNG } from 'primeng/config';
 import { App } from './app/app';
+import { appConfig } from './app/app.config';
 
-bootstrapApplication(App, appConfig).catch((err) => console.error(err));
+import Aura from '@primeng/themes/aura';
+
+bootstrapApplication(App, {
+  ...appConfig,
+  providers: [
+    provideAnimationsAsync(),
+    providePrimeNG({
+      theme: {
+        preset: Aura,
+      },
+      ripple: true,
+    }),
+    ...(appConfig.providers ?? []),
+  ],
+}).catch((err) => console.error(err));

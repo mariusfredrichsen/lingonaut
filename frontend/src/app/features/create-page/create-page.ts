@@ -8,20 +8,19 @@ import {
   FormBuilder,
   FormGroup,
   FormArray,
+  ReactiveFormsModule,
+  AbstractControl,
+  ValidationErrors,
 } from '@angular/forms';
 import { CreateCategory } from './components/create-category/create-category';
-import { Select, SelectModule } from 'primeng/select';
-import { ReactiveFormsModule } from '@angular/forms';
+import { SelectModule } from 'primeng/select';
 import languages from '../../assets/languages.json';
 import { ButtonModule } from 'primeng/button';
 import { CommonModule } from '@angular/common';
-import { ActivatedRoute, Router } from '@angular/router';
-import { CreateService } from './create.service';
+import { CreateService } from './create-page.service';
 import { DropdownModule } from 'primeng/dropdown';
-
-interface Language {
-  name: string;
-}
+import { CardModule } from 'primeng/card';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-create-page',
@@ -37,17 +36,37 @@ interface Language {
     SelectModule,
     DropdownModule,
   ],
-  templateUrl: './create.html',
-  styleUrl: './create.scss',
+  templateUrl: './create-page.html',
+  styleUrl: './create-page.scss',
   standalone: true,
 })
 export class CreatePage {
   languages: Language[] = languages;
-  selectedLanguageFrom: string | undefined;
-  selectedLanguageTo: string | undefined;
+  selectedLanguageFrom: Language | undefined;
+  selectedLanguageTo: Language | undefined;
   courseForm: FormGroup;
 
-  constructor(private fb: FormBuilder, private createService: CreateService) {
+  languageValidator(control: AbstractControl): ValidationErrors | null {
+    const value = control.value;
+
+    console.log(value);
+
+    if (
+      !value ||
+      typeof value !== 'object' ||
+      typeof value.name !== 'string' ||
+      typeof value.originCountryCode !== 'string'
+    ) {
+      return { invalidLanguageObject: true };
+    }
+    return null;
+  }
+
+  constructor(
+    private fb: FormBuilder,
+    private createService: CreateService,
+    private router: Router
+  ) {
     const term = this.fb.group({
       termFrom: ['', Validators.required],
       termTo: ['', Validators.required],
@@ -64,8 +83,14 @@ export class CreatePage {
       title: ['', Validators.required],
       description: [''],
       author: ['RobertDoberts'],
-      languageFrom: ['', Validators.required],
-      languageTo: ['', Validators.required],
+      languageFrom: [
+        null,
+        [Validators.required, this.languageValidator.bind(this)],
+      ],
+      languageTo: [
+        null,
+        [Validators.required, this.languageValidator.bind(this)],
+      ],
       categories: this.fb.array([category]),
     });
     console.log(languages);
@@ -92,7 +117,10 @@ export class CreatePage {
     if (this.courseForm.valid) {
       console.log('Course Created:', this.courseForm.value);
       this.createService.createCourse(this.courseForm.value).subscribe({
-        next: (res) => console.log('Course created:', res),
+        next: (res) => {
+          console.log('Course created:', res);
+          this.router.navigate(['/']);
+        },
         error: (err) => console.error('Error: ', err),
       });
     } else {

@@ -1,21 +1,21 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
 import { CourseList } from './components/course-list/course-list';
-import { CourseService } from './components/course/course.service';
 import { DividerModule } from 'primeng/divider';
 import { CardModule } from 'primeng/card';
 import { ButtonModule } from 'primeng/button';
 import { filter, Subscription } from 'rxjs';
 import { NavigationEnd, Router } from '@angular/router';
 import { Course } from '../../core/models/course.model';
+import { CourseService } from '../../core/services/course-service/course-service';
 
 @Component({
   selector: 'app-dashboard-page',
   standalone: true,
   imports: [CourseList, DividerModule, CardModule, ButtonModule],
-  templateUrl: './dashboard.html',
-  styleUrl: './dashboard.scss',
+  templateUrl: './dashboard-page.html',
+  styleUrl: './dashboard-page.scss',
 })
-export class DashboardPage implements OnInit, OnDestroy {
+export class DashboardPage implements OnInit {
   courses: Course[] = [];
   private routerSub!: Subscription;
 
@@ -23,16 +23,6 @@ export class DashboardPage implements OnInit, OnDestroy {
 
   ngOnInit(): void {
     this.loadCourses();
-
-    this.routerSub = this.router.events
-      .pipe(filter((event) => event instanceof NavigationEnd))
-      .subscribe((event: NavigationEnd) => {
-        this.loadCourses();
-      });
-  }
-
-  ngOnDestroy(): void {
-    this.routerSub?.unsubscribe();
   }
 
   private loadCourses(): void {

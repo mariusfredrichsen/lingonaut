@@ -17,7 +17,7 @@
             <div class="flex flex-col flex-1">
                 <label for="language_from">From:</label>
                 <!-- TODO add flags -->
-                <p-select id="language_from" [options]="languages" formControlName="languageFrom" optionLabel="name" [optionValue]="'name'" [filter]="true" filterBy="name" placeholder="Select a Language"/>
+                <p-select id="language_from" [options]="languages" formControlName="languageFrom" optionLabel="name" [filter]="true" filterBy="name" placeholder="Select a Language"/>
             </div>
 
             <p-button icon="pi pi-arrow-right-arrow-left" (onClick)="swapLanguage()" />
@@ -25,7 +25,7 @@
             <div class="flex flex-col flex-1">
                 <label for="language_to">To:</label>
                 <!-- TODO add flags -->
-                <p-select id="language_to" [options]="languages" formControlName="languageTo" optionLabel="name" [optionValue]="'name'" [filter]="true" filterBy="name" placeholder="Select a Language"/>
+                <p-select id="language_to" [options]="languages" formControlName="languageTo" optionLabel="name" [filter]="true" filterBy="name" placeholder="Select a Language"/>
             </div> 
         </div>
     

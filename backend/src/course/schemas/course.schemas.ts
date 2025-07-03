@@ -11,6 +11,20 @@ import {
 export type CourseDocument = Course & Document;
 
 @Schema()
+class Language {
+  @Prop({ required: true })
+  name: string;
+
+  @Prop({ required: false })
+  originCountryCode?: string;
+
+  @Prop({ required: false })
+  iso_639_1_code?: string;
+}
+
+const LanguageSchema = SchemaFactory.createForClass(Language);
+
+@Schema()
 export class Course {
   @Prop({ required: true })
   title: string;
@@ -21,11 +35,11 @@ export class Course {
   @Prop({ required: false })
   description?: string;
 
-  @Prop({ required: true })
-  languageFrom: string; // from
+  @Prop({ type: LanguageSchema, required: true })
+  languageFrom: Language; // from
 
-  @Prop({ required: true })
-  languageTo: string; // to
+  @Prop({ type: LanguageSchema, required: true })
+  languageTo: Language; // to
 
   @Prop({ type: [CategorySchema], required: true })
   categories: Category[] = [];

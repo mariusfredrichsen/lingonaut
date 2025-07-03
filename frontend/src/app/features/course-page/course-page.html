@@ -1,0 +1,47 @@
+<div class="mx-auto w-3/4 break-words">
+    <header class="py-4">
+        <h1>{{course?.title}}</h1>
+    </header>
+    <p-divider type="solid" />
+    <div class="flex flex-row w-full gap-4">
+        <div class="flex flex-1 flex-col gap-4">
+            <header class="py-4">
+                <h2>Categories:</h2>
+            </header>
+            <div *ngFor="let category of course?.categories">
+                <p-card (click)="selectCategory(category)">
+                    <ng-template #title>
+                        <span *ngIf="category.title">{{category.title}}</span> 
+                    </ng-template>
+                    <ng-template #footer>
+                        <p-divider />
+                        <span *ngIf="category.description">{{category.description}}<br /><br /></span>
+                        <span class="text-sm">Terms: {{category.terms.length}}</span>
+                    </ng-template>
+                </p-card>
+            </div>
+        </div>
+        <p-divider *ngIf="selectedCategory" type="solid" layout="vertical" />
+        <div *ngIf="selectedCategory" class="flex flex-col flex-3 gap-4">
+            <header class="py-4">
+                <h2>Terms - {{selectedCategory.title}}</h2>
+            </header>
+            <p-card>
+                <div *ngFor="let term of selectedCategory?.terms">
+                    <p-card class="my-4">
+                        <div class="flex flex-row gap-4">
+                            <p-floatlabel variant="in">
+                                <input pInputText id="term_from_{{term._id}}" [value]="term.termFrom" readonly class="select-none pointer-events-none">
+                                <label for="term_from">From:</label>
+                            </p-floatlabel>
+                            <p-floatlabel variant="in">
+                                <input pInputText id="term_to_{{term._id}}" [value]="term.termTo" readonly class="select-none pointer-events-none">
+                                <label for="term_from">To:</label>
+                            </p-floatlabel>
+                        </div>
+                    </p-card>
+                </div>
+            </p-card>
+        </div>
+    </div>
+</div>

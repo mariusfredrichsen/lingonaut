@@ -1,6 +1,6 @@
 export interface Term {
-  id?: number;
-  from: string;
-  to: string;
+  _id?: number;
+  termFrom: string;
+  termTo: string;
   description?: string;
 }

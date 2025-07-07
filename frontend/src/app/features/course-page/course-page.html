@@ -23,8 +23,9 @@
         </div>
         <p-divider *ngIf="selectedCategory" type="solid" layout="vertical" />
         <div *ngIf="selectedCategory" class="flex flex-col flex-3 gap-4">
-            <header class="py-4">
+            <header class="flex flex-row py-4 justify-between">
                 <h2>Terms - {{selectedCategory.title}}</h2>
+                <p-button label="Start Learning" (onClick)="navigateToPlayingCategories()"/>
             </header>
             <p-card>
                 <div *ngFor="let term of selectedCategory?.terms">

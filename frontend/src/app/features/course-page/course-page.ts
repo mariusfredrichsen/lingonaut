@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { CourseService } from '../../core/services/course-service/course-service';
 import { Course } from '../../core/models/course.model';
 import { DividerModule } from 'primeng/divider';
@@ -9,6 +9,7 @@ import { Category } from '../../core/models/category.model';
 import { FloatLabelModule } from 'primeng/floatlabel';
 import { InputTextModule } from 'primeng/inputtext';
 import { FormsModule } from '@angular/forms';
+import { ButtonModule } from 'primeng/button';
 
 @Component({
   selector: 'app-course-page',
@@ -20,6 +21,7 @@ import { FormsModule } from '@angular/forms';
     FloatLabelModule,
     InputTextModule,
     FormsModule,
+    ButtonModule,
   ],
   templateUrl: './course-page.html',
   styleUrl: './course-page.scss',
@@ -30,7 +32,10 @@ export class CoursePage {
   course: Course | undefined;
   selectedCategory: Category | undefined;
 
+  playing: boolean = false;
+
   constructor(
+    private router: Router,
     private route: ActivatedRoute,
     private courseService: CourseService
   ) {}
@@ -53,5 +58,12 @@ export class CoursePage {
   selectCategory(category: Category): void {
     this.selectedCategory = category;
     console.log(category);
+  }
+
+  navigateToPlayingCategories(): void {
+    console.log(this.selectedCategory);
+    if (this.selectedCategory) {
+      this.router.navigate(['play', this.courseId, this.selectedCategory._id]);
+    }
   }
 }

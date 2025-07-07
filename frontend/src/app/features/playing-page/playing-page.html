@@ -1,0 +1,12 @@
+<p>playing-page works!</p>
+<div *ngFor="let term of category?.terms">
+    <p-card>
+        <ng-template #title>
+            <span>{{term.termFrom}}</span>
+        </ng-template>
+        <ng-template #subtitle>
+            <span>{{term.termTo}}</span>
+        </ng-template>
+    </p-card>
+</div>
+<p-button label="Go Back" (onClick)="navigateBackToCourse()"/>

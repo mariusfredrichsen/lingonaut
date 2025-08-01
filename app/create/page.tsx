@@ -22,10 +22,27 @@ import LanguageIcon from '@/app/utils/Language.svg'
 import { useState } from "react";
 
 
-export default function CreatePage() {
-    const [languageFrom, setLanguageFrom] = useState<string | null>(null);
-    const [languageTo, setLanguageTo] = useState<string | null>(null);
+type Term = {
+    fromLanguage: string
+    toLanguage: string
+    fromTerm: string
+    toTerm: string
+    description?: string
+}
 
+
+export default function CreatePage() {
+    const [languageFrom, setLanguageFrom] = useState<any>(null);
+    const [languageTo, setLanguageTo] = useState<any>(null);
+
+    const emptyTerm: Term = {
+        fromLanguage: "",
+        toLanguage: "",
+        fromTerm: "",
+        toTerm: "",
+        description: ""
+    };
+    const [terms, setTerms] = useState<Term[]>([emptyTerm]);
 
     const onSubmit = (e: any) => {
         e.preventDefault();
@@ -37,6 +54,17 @@ export default function CreatePage() {
         setLanguageFrom(languageTo);
         setLanguageTo(languageFrom);
     };
+
+    const handleTermChange = (index: number, key: keyof Term, value: string) => {
+        const updatedTerms = [...terms];
+        updatedTerms[index][key] = value;
+        setTerms(updatedTerms);
+    };
+
+    const handleAddTerm = () => {
+        setTerms(prev => [...prev, { ...emptyTerm }]);
+    };
+
 
     return (
         <div className="p-4 w-full">
@@ -76,8 +104,14 @@ export default function CreatePage() {
                         label="Select from"
                         name="languageFrom"
                         isRequired
-                        selectedKey={languageFrom ?? undefined}
-                        onSelectionChange={(key) => setLanguageFrom(key as string)}
+                        selectedKey={languageFrom?.name}
+                        onSelectionChange={(key) => {
+                            const selected = languages.find(lang => lang.name === key);
+                            if (selected) setLanguageFrom(selected);
+                        }}
+                        onClear={() => {
+                            setLanguageFrom(undefined);
+                        }}
                         startContent={
                             <img src={LanguageIcon.src} className="w-5 h-5" />
                         }
@@ -89,9 +123,9 @@ export default function CreatePage() {
                             },
                         }}
                     >
-                        {languages.map((language: any, index: number) =>
+                        {languages.map((language: any) =>
                             <AutocompleteItem
-                                key={index}
+                                key={language.name}
                                 startContent={
                                     <Avatar alt={language.name} className="w-6 h-6" src={`https://flagcdn.com/${language.countryCode}.svg`} />
                                 }
@@ -112,8 +146,14 @@ export default function CreatePage() {
                         label="Select to"
                         name="languageTo"
                         isRequired
-                        selectedKey={languageTo ?? undefined}
-                        onSelectionChange={(key) => setLanguageTo(key as string)}
+                        selectedKey={languageTo?.name}
+                        onSelectionChange={(key) => {
+                            const selected = languages.find(lang => lang.name === key);
+                            if (selected) setLanguageTo(selected);
+                        }}
+                        onClear={() => {
+                            setLanguageTo(undefined);
+                        }}
                         startContent={
                             <img src={LanguageIcon.src} className="w-5 h-5" />
                         }
@@ -124,9 +164,9 @@ export default function CreatePage() {
                             },
                         }}
                     >
-                        {languages.map((language: any, index: number) =>
+                        {languages.map((language: any) =>
                             <AutocompleteItem
-                                key={index}
+                                key={language.name}
                                 startContent={
                                     <Avatar alt={language.name} className="w-6 h-6" src={`https://flagcdn.com/${language.countryCode}.svg`} />
                                 }
@@ -140,9 +180,49 @@ export default function CreatePage() {
                 <Spacer />
 
                 <h2>Create terms or categories</h2>
-                {/* TODO add list of terms that has been created */}
-                <div className="h-screen">
-                    asd
+                <div className="w-full">
+                    {terms.map((term, idx) => (
+                        <div key={idx} className="flex flex-row gap-8 mb-4 p-4 rounded-2xl shadow-sm bg-secondary-700">
+                            <div className="flex-1">
+                                <Input
+                                    placeholder={
+                                        languageFrom?.name
+                                            ? `Enter ${['a', 'e', 'i', 'o', 'u'].includes(languageFrom.name.charAt(0).toLowerCase()) ? "an" : "a"} ${languageFrom.name.toLowerCase()} term`
+                                            : ""
+                                    }
+                                    value={term.fromTerm}
+                                    onChange={e => handleTermChange(idx, 'fromTerm', e.target.value)}
+                                    classNames={{
+                                        inputWrapper: "shadow-sm",
+                                    }}
+                                />
+                                <label className="text-sm font-bold">From {languageFrom?.name ?? ""}</label>
+                            </div>
+                            <div className="flex-1">
+                                <Input
+                                    placeholder={
+                                        languageTo?.name
+                                            ? `Enter ${['a', 'e', 'i', 'o', 'u'].includes(languageTo.name.charAt(0).toLowerCase()) ? "an" : "a"} ${languageTo.name.toLowerCase()} term`
+                                            : ""
+                                    }
+                                    value={term.toTerm}
+                                    onChange={e => handleTermChange(idx, 'toTerm', e.target.value)}
+                                    classNames={{
+                                        inputWrapper: "shadow-sm",
+                                    }}
+                                />
+                                <label className="text-sm font-bold">To {languageTo?.name ?? ""}</label>
+                            </div>
+                        </div>
+                    ))}
+
+                    <Button
+                        type="button"
+                        onPress={handleAddTerm}
+                        className="mt-2"
+                    >
+                        Add term/category
+                    </Button>
                 </div>
             </Form>
         </div>

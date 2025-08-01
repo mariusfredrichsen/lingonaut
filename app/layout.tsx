@@ -19,7 +19,7 @@ export default function RootLayout({
         <HeroUIProvider>
           <div className="flex flex-col h-full">
             <TopBar />
-            <div className="p-4 mt-16 mx-[12.5%] flex-1">
+            <div className="p-4 mt-16 mx-0 md:mx-[12.5%] flex-1">
               {children}
             </div>
           </div>

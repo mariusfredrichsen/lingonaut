@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+@import "tailwindcss";
+@plugin './hero.ts';
+@source '../node_modules/@heroui/theme/dist/**/*.{js,ts,jsx,tsx}';
+@custom-variant dark (&:is(.dark *));
+
+@theme {
+	--color-text-50: #0f0d0a;
+	--color-text-100: #1f1b14;
+	--color-text-200: #3d3629;
+	--color-text-300: #5c513d;
+	--color-text-400: #7a6b52;
+	--color-text-500: #998666;
+	--color-text-600: #ad9e85;
+	--color-text-700: #c2b7a3;
+	--color-text-800: #d6cfc2;
+	--color-text-900: #ebe7e0;
+	--color-text-950: #f5f3f0;
+
+	--color-background-50: #110e09;
+	--color-background-100: #221b11;
+	--color-background-200: #443622;
+	--color-background-300: #665233;
+	--color-background-400: #886d44;
+	--color-background-500: #aa8855;
+	--color-background-600: #bba077;
+	--color-background-700: #ccb899;
+	--color-background-800: #ddcfbb;
+	--color-background-900: #eee7dd;
+	--color-background-950: #f6f3ee;
+
+	--color-primary-50: #1a0e00;
+	--color-primary-100: #331b00;
+	--color-primary-200: #663600;
+	--color-primary-300: #995200;
+	--color-primary-400: #cc6d00;
+	--color-primary-500: #ff8800;
+	--color-primary-600: #ffa033;
+	--color-primary-700: #ffb866;
+	--color-primary-800: #ffcf99;
+	--color-primary-900: #ffe7cc;
+	--color-primary-950: #fff3e5;
+
+	--color-secondary-50: #170d03;
+	--color-secondary-100: #2d1b06;
+	--color-secondary-200: #5a360c;
+	--color-secondary-300: #875012;
+	--color-secondary-400: #b56b17;
+	--color-secondary-500: #e2861d;
+	--color-secondary-600: #e89e4a;
+	--color-secondary-700: #edb678;
+	--color-secondary-800: #f3cfa5;
+	--color-secondary-900: #f9e7d2;
+	--color-secondary-950: #fcf3e8;
+
+	--color-accent-50: #1a0e00;
+	--color-accent-100: #331b00;
+	--color-accent-200: #663600;
+	--color-accent-300: #995200;
+	--color-accent-400: #cc6d00;
+	--color-accent-500: #ff8800;
+	--color-accent-600: #ffa033;
+	--color-accent-700: #ffb866;
+	--color-accent-800: #ffcf99;
+	--color-accent-900: #ffe7cc;
+	--color-accent-950: #fff3e5;
+}
+
+body {
+	font-family: "Open Sans", sans-serif;
+	background: var(--color-background-950);
+	color: var(--color-text-50);
+	height: 100%;
+}
+
+h1 {
+	@apply text-2xl;
+}
+
+h2 {
+	@apply text-xl;
+}
+
+h3 {
+	@apply text-lg;
+}
+
+h4 {
+	@apply text-base;
+}
+
+h5 {
+	@apply text-sm;
+}

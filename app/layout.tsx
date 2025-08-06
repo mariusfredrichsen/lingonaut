@@ -14,18 +14,15 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="h-full">
-      <body>
+    <html lang="en" className="h-full w-full bg-background-950">
+      <body className="w-full h-full">
         <HeroUIProvider>
-          <div className="flex flex-col h-full">
-            <TopBar />
-            <div className="p-4 mt-16 mx-0 md:mx-[12.5%] flex-1">
-              {children}
-            </div>
+          <TopBar />
+          <div className="p-4 mt-16 mx-0 md:mx-[12.5%]">
+            {children}
           </div>
         </HeroUIProvider>
       </body>
-    </html >
-
+    </html>
   );
 }

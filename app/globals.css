@@ -66,11 +66,17 @@
 	--color-accent-950: #fff3e5;
 }
 
+:root {
+	background: white;
+	color: var(--color-text-50);
+}
+
 body {
 	font-family: "Open Sans", sans-serif;
-	background: var(--color-background-950);
+	background: white;
 	color: var(--color-text-50);
 	height: 100%;
+	width: 100%;
 }
 
 h1 {

@@ -2,11 +2,11 @@ import mongoose from "mongoose";
 
 const CategorySchema = new mongoose.Schema(
 	{
-		_id: String,
+		title: { type: String, required: true },
 		languageFrom: { type: String, required: true },
 		languageTo: { type: String, required: true },
-		description: { type: String },
-		terms: [{ type: String, ref: "Term" }],
+		description: { type: String, required: false },
+		terms: [{ type: mongoose.Schema.Types.ObjectId, ref: "Term" }],
 	},
 	{ timestamps: true }
 );

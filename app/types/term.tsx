@@ -1,11 +1,9 @@
-import { Category } from './category';
 
 export type Term = {
     id: string;
-    languageFrom: string;
-    languageTo: string;
-    termFrom: string;
-    termTo: string;
+    term: string;
+    definition: string;
+    termLanguage: string;
+    definitionLanguage: string;
     description?: string;
-    categories: Category[];
 };

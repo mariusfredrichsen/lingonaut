@@ -1,4 +1,3 @@
-import { Category } from './category';
 import { Term } from './term';
 
 
@@ -11,5 +10,4 @@ export type Course = {
     description?: string;
     author: string;
     terms: Term[];
-    categories: Category[];
 };

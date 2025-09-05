@@ -16,6 +16,7 @@ import { useCallback, useEffect, useState } from "react";
 import TermInput from "./components/TermInput";
 import { Term } from "../types/term";
 import { v4 as uuidv4 } from 'uuid';
+import CSVInput from "./components/CSVInput";
 
 
 
@@ -298,6 +299,7 @@ export default function CreatePage() {
                             </span>
                         </Button>
                     </div>
+                    <CSVInput />
                 </div>
             </Form >
         </div >

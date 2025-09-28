@@ -12,13 +12,18 @@ const CSVInput = () => {
 
     useEffect(() => {
         const termDefinitionPair = textInput.split("\n")
-        setTerms(termDefinitionPair.map((pair) => {
-            return pair.split(";")[0]
-        }))
+        const newTerms: string[] = []
+        const newDefinitions: string[] = []
 
-        setDefinitions(termDefinitionPair.map((pair) => {
-            return pair.split(";")[1]
-        }))
+        termDefinitionPair.forEach((pair) => {
+            const [term, definition] = pair.split(";");
+            if (!definition) return;
+            newTerms.push(term)
+            newDefinitions.push(definition)
+        })
+        console.log(termDefinitionPair)
+        setTerms(newTerms)
+        setDefinitions(newDefinitions)
     }, [textInput])
 
     return (
@@ -32,13 +37,24 @@ const CSVInput = () => {
                 <option value=";">;</option>
                 <option value=",">,</option>
             </select>
-            <div>
-                {terms.map((term, idx) => (
-                    <div key={idx}>
-                        <span>{term}</span>
-                        <span>{definitions[idx]}</span>
-                    </div>
-                ))}
+            <div className="flex justify-between flex-row">
+                <div className="flex flex-col w-full">
+                    {terms.map((term, idx) => {
+                        return (
+                            <div className="flex justify-between w-full">
+                                <span key={idx}>{term}</span>
+                                <span>-</span>
+                            </div>
+                        )
+                    })}
+                </div>
+                <div className="flex flex-col w-full text-right">
+                    {definitions.map((definition, idx) => {
+                        return (
+                            <span key={idx}>{definition}</span>
+                        )
+                    })}
+                </div>
             </div>
         </div>
     )

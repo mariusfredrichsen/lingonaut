@@ -3,6 +3,21 @@ import dbConnect from "@/lib/mongoose";
 import { Term } from "@/models/Term";
 import { Course } from "@/models/Course";
 
+export async function GET() {
+	await dbConnect();
+
+	try {
+		const courses = await Course.find().populate("terms");
+		return NextResponse.json(courses, { status: 200 });
+	} catch (error: any) {
+		console.error("GET /api/courses error:", error);
+		return NextResponse.json(
+			{ error: error.message || "Internal Server Error" },
+			{ status: 500 }
+		);
+	}
+}
+
 export async function POST(request: Request) {
 	await dbConnect();
 
